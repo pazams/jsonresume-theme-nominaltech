@@ -100,12 +100,18 @@
           <h3>Skills</h3>
         </header>
         <div class="col-md-9">
-          <div class="row-fluid skills">
+          <div class="skills">
             {{#skills}}
-            <ul class="col-md-6">
-
+            <ul>
               <li>
-                <h4>{{name}}</h4>
+                <div class="row">
+                  <div class="col-md-9">
+                    <h4>{{name}}</h4>
+                  </div>
+                  <div class="col-md-3">
+                    <h5>{{level}}</h5>
+                  </div>
+                </div>
                 <ul>
                   {{#keywords}}
                   <li>{{.}}</li>

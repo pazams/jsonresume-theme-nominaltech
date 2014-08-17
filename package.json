@@ -1,21 +1,21 @@
 {
-  "name": "jsonresume-theme-modern",
-  "version": "0.0.18",
-  "description": "jsonresume-theme-modern =======================",
+  "name": "jsonresume-theme-modern-extended",
+  "version": "0.0.1",
+  "description": "jsonresume-theme-modern-extended =======================",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsonresume/jsonresume-theme-modern.git"
+    "url": "https://github.com/Zeikko/jsonresume-theme-modern-extended"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jsonresume/jsonresume-theme-modern/issues"
+    "url": "https://github.com/Zeikko/jsonresume-theme-modern-extended/issues"
   },
-  "homepage": "https://github.com/jsonresume/jsonresume-theme-modern",
+  "homepage": "https://github.com/Zeikko/jsonresume-theme-modern-extended",
   "dependencies": {
     "gravatar": "^1.0.6",
     "lodash": "^2.4.1",

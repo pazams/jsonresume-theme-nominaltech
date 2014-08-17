@@ -7,6 +7,13 @@
     <title>{{basics.firstName}} {{basics.lastName}}</title>
     <link href="http://bootswatch.com/lumen/bootstrap.min.css" rel="stylesheet" />
    <style>
+      .skills ul {
+        margin: 0;
+      }
+      .skills ul li {
+        list-style: none;
+        margin: 0;
+      }
     </style>
 
   

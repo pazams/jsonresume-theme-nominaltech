@@ -16,3 +16,10 @@ section div > h3 {
 	padding: 0;
 	margin: 0;
 }
+.skills ul {
+	margin: 0;
+}
+.skills ul li {
+	list-style: none;
+	margin: 0;
+}

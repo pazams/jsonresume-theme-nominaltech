@@ -9,6 +9,7 @@
    <style>
       .skills ul {
         margin: 0;
+        padding: 0;
       }
       .skills ul li {
         list-style: none;

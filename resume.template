@@ -15,6 +15,10 @@
         list-style: none;
         margin: 0;
       }
+      .date {
+        font-size: 15px;
+        line-height: 24px;
+      }
     </style>
 
   
@@ -65,7 +69,7 @@
           <div class="skills">
             {{#work}}
             <div class="row">
-              <h3>{{company}} <span class="pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
+              <h3>{{company}} <span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
               <strong>{{position}}</strong>
               {{#website}}
                 <div class="website pull-right">

@@ -7,9 +7,9 @@ function render(resumeObject) {
 
 
 	_.each(resumeObject.work, function(w){
-		w.startDateYear = w.startDate.substr(0,4);
+		w.startDateYear = w.startDate.substr(0,7);
 		if(w.endDate) {
-			w.endDateYear = w.endDate.substr(0,4);
+			w.endDateYear = w.endDate.substr(0,7);
 		} else { 
 			w.endDateYear = 'Present'
 		}

@@ -69,7 +69,7 @@
           <div class="skills">
             {{#work}}
             <div class="row">
-              <h3>{{company}} <span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
+              <h3>{{company}}<span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
               <strong>{{position}}</strong>
               {{#website}}
                 <div class="website pull-right">
@@ -97,9 +97,8 @@
         <div class="col-md-9">
           <div class="skills">
             {{#education}}
-            <h3>{{institution}}</h3>
+            <h3>{{institution}}<span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
             <h4>{{educationDetail}}</h4>
-            <p>{{startDateYear}} - {{endDateYear}}</p>
             <p>{{summary}}</p>
             <ul>
               {{#highlights}}
@@ -120,14 +119,13 @@
         <div class="col-md-9">
           <div class="skills">
             {{#volunteer}}
-            <h3>{{organization}}</h3>
+            <h3>{{organization}}<span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
+            <h4>{{position}}</h4>
             {{#website}}
-              <div class="website">
+              <div class="website pull-right">
                 <a href="{{.}}">{{.}}</a>
               </div>
             {{/website}}
-            <h4>{{position}}</h4>
-            <p>{{startDateYear}} - {{endDateYear}}</p>
             <p>{{summary}}</p>
             <ul>
               {{#highlights}}

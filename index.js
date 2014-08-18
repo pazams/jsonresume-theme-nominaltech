@@ -49,7 +49,7 @@ function render(resumeObject) {
 	});
 
 	var theme = fs.readFileSync(__dirname + '/resume.template', 'utf8');
-	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
+	var css = fs.readFileSync(__dirname + "/resume.css", "utf-8");
 	resumeObject.css = css;
 	var resumeHTML = Mustache.render(theme, resumeObject);
 	

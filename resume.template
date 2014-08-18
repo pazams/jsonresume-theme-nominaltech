@@ -65,6 +65,11 @@
           <div class="skills">
             {{#work}}
             <h3>{{company}}</h3>
+            {{#website}}
+              <div class="website">
+                <a href="{{.}}">{{.}}</a>
+              </div>
+            {{/website}}
             <strong>{{position}}</strong>
             <p>{{startDateYear}} - {{endDateYear}}</p>
             <p>{{summary}}</p>
@@ -111,6 +116,11 @@
           <div class="skills">
             {{#volunteer}}
             <h3>{{organization}}</h3>
+            {{#website}}
+              <div class="website">
+                <a href="{{.}}">{{.}}</a>
+              </div>
+            {{/website}}
             <h4>{{position}}</h4>
             <p>{{startDateYear}} - {{endDateYear}}</p>
             <p>{{summary}}</p>

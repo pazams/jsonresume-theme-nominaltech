@@ -43,7 +43,7 @@
           {{#basics.profiles.length}}
           <section id="profiles" class="row">
             <div class="row">
-              {{#profiles}}
+              {{#basics.profiles}}
               <div class="col-sm-6">
                 {{#network}}
                 <strong class="network">
@@ -70,7 +70,7 @@
                   {{/url}}
                 {{/username}}
               </div>
-              {{/profiles}}
+              {{/basics.profiles}}
             </div>
           </section>
           {{/basics.profiles.length}}

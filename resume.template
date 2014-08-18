@@ -64,20 +64,21 @@
         <div class="col-md-9">
           <div class="skills">
             {{#work}}
-            <h3>{{company}}</h3>
-            {{#website}}
-              <div class="website">
-                <a href="{{.}}">{{.}}</a>
-              </div>
-            {{/website}}
-            <strong>{{position}}</strong>
-            <p>{{startDateYear}} - {{endDateYear}}</p>
-            <p>{{summary}}</p>
-            <ul>
-              {{#highlights}}
-              <li>{{.}}</li>
-              {{/highlights}}
-            </ul>
+            <div class="row">
+              <h3>{{company}} <span class="pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
+              <strong>{{position}}</strong>
+              {{#website}}
+                <div class="website pull-right">
+                  <a href="{{.}}">{{.}}</a>
+                </div>
+              {{/website}}
+              <p>{{summary}}</p>
+              <ul>
+                {{#highlights}}
+                <li>{{.}}</li>
+                {{/highlights}}
+              </ul>
+            </div>
             <hr />{{/work}}
           </div>
         </div>

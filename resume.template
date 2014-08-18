@@ -40,15 +40,41 @@
         {{#basics.email}}
         <strong>Email:</strong> {{basics.email}}<br />
         {{/basics.email}}
-        {{#profiles.twitter}}
-        <strong>Twitter:</strong> <a href="http://twitter.com/{{.}}">{{.}}</a><br />
-        {{/profiles.twitter}}
-        {{#profiles.github}}
-        <strong>Github:</strong> <a href="http://github.com/{{.}}">{{.}}</a><br />
-
-        {{/profiles.github}}
+        {{#profiles.length}}
+        <section id="profiles" class="row">
+            <div class="row">
+              {{#profiles}}
+              <div class="col-sm-6">
+                {{#network}}
+                <strong class="network">
+                  {{.}}
+                </strong>
+                {{/network}}
+                {{#username}}
+                <div class="username">
+                  {{#if url}}
+                  <div class="url">
+                    <a href="{{url}}">{{username}}</a>
+                  </div>
+                  {{else}}
+                    {{username}}
+                  {{/if}}
+                </div>
+                {{/username}}
+                {{^username}}
+                  {{#url}}
+                  <div class="url">
+                    <a href="{{url}}">{{url}}</a>
+                  </div>
+                  {{/if}}
+                {{/username}}
+              </div>
+              {{/profiles}}
+          </div>
+        </section>
         </div>
       </section>
+      {{/profiles.length}}
       {{#work.length}}
       <section class="row">
         <header class="col-md-3">

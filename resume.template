@@ -99,7 +99,7 @@
           <div class="skills">
             {{#education}}
             <h3>{{institution}}<span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
-            <h4>{{educationDetail}}</h4>
+            <strong>{{educationDetail}}</strong>
             <p>{{summary}}</p>
             <ul>
               {{#highlights}}
@@ -121,7 +121,7 @@
           <div class="skills">
             {{#volunteer}}
             <h3>{{organization}}<span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
-            <h4>{{position}}</h4>
+            <strong>{{position}}</strong>
             {{#website}}
               <div class="website pull-right">
                 <a href="{{.}}">{{.}}</a>

@@ -41,7 +41,7 @@
           <strong>Email:</strong> {{basics.email}}<br />
           {{/basics.email}}
           {{#basics.profiles.length}}
-          <section id="profiles" class="row">
+          <section id="profiles">
             <div class="row">
               {{#basics.profiles}}
               <div class="col-sm-6">
@@ -54,7 +54,7 @@
                 <div class="username">
                   {{#url}}
                   <div class="url">
-                    <a href="{{url}}">{{username}}</a>
+                    <a target="_blank" href="{{url}}">{{username}}</a>
                   </div>
                   {{/url}}
                   {{^url}}
@@ -65,7 +65,7 @@
                 {{^username}}
                   {{#url}}
                   <div class="url">
-                    <a href="{{url}}">{{url}}</a>
+                    <a target="_blank" href="{{url}}">{{url}}</a>
                   </div>
                   {{/url}}
                 {{/username}}

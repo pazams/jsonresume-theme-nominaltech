@@ -33,15 +33,15 @@
           <h3>About</h3>
         </header>
         <div class="col-md-9">
-        <p>{{basics.summary}}</p>
-        {{#basics.phone}}
-        <strong>Phone:</strong> {{basics.phone}} <br />
-        {{/basics.phone}}
-        {{#basics.email}}
-        <strong>Email:</strong> {{basics.email}}<br />
-        {{/basics.email}}
-        {{#profiles.length}}
-        <section id="profiles" class="row">
+          <p>{{basics.summary}}</p>
+          {{#basics.phone}}
+          <strong>Phone:</strong> {{basics.phone}} <br />
+          {{/basics.phone}}
+          {{#basics.email}}
+          <strong>Email:</strong> {{basics.email}}<br />
+          {{/basics.email}}
+          {{#profiles.length}}
+          <section id="profiles" class="row">
             <div class="row">
               {{#profiles}}
               <div class="col-sm-6">
@@ -56,22 +56,23 @@
                   <div class="url">
                     <a href="{{url}}">{{username}}</a>
                   </div>
-                  {{else}}
+                  {{/url}}
+                  {{^url}}
                     {{username}}
                   {{/url}}
-                </div>
-                {{/username}}
-                {{^username}}
-                  {{#url}}
-                  <div class="url">
-                    <a href="{{url}}">{{url}}</a>
                   </div>
-                  {{/url}}
-                {{/username}}
+                  {{/username}}
+                  {{^username}}
+                    {{#url}}
+                    <div class="url">
+                      <a href="{{url}}">{{url}}</a>
+                    </div>
+                    {{/url}}
+                  {{/username}}
+                </div>
+                {{/profiles}}
               </div>
-              {{/profiles}}
-          </div>
-        </section>
+            </section>
         </div>
       </section>
       {{/profiles.length}}

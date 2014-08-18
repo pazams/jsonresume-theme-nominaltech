@@ -68,7 +68,6 @@
         <div class="col-md-9">
           <div class="skills">
             {{#work}}
-            <div class="row">
               <h3>{{company}}<span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
               <strong>{{position}}</strong>
               {{#website}}
@@ -82,7 +81,6 @@
                 <li>{{.}}</li>
                 {{/highlights}}
               </ul>
-            </div>
             <hr />{{/work}}
           </div>
         </div>

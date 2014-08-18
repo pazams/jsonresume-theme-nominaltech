@@ -40,7 +40,7 @@
           {{#basics.email}}
           <strong>Email:</strong> {{basics.email}}<br />
           {{/basics.email}}
-          {{#profiles.length}}
+          {{#basics.profiles.length}}
           <section id="profiles" class="row">
             <div class="row">
               {{#profiles}}
@@ -73,7 +73,7 @@
               {{/profiles}}
             </div>
           </section>
-          {{/profiles.length}}
+          {{/basics.profiles.length}}
         </div>
       </section>
       {{#work.length}}

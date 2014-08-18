@@ -88,7 +88,7 @@
               <strong>{{position}}</strong>
               {{#website}}
                 <div class="website pull-right">
-                  <a href="{{.}}">{{.}}</a>
+                  <a target="_blank" href="{{.}}">{{.}}</a>
                 </div>
               {{/website}}
               <p>{{summary}}</p>
@@ -139,7 +139,7 @@
             <strong>{{position}}</strong>
             {{#website}}
               <div class="website pull-right">
-                <a href="{{.}}">{{.}}</a>
+                <a target="_blank" href="{{.}}">{{.}}</a>
               </div>
             {{/website}}
             <p>{{summary}}</p>

@@ -42,11 +42,6 @@ function render(resumeObject) {
                         d: 'mm'
                     });
 	}
-	resumeObject.profiles = {};
-
-	_.each(resumeObject.basics.profiles, function(profile){
-    	resumeObject.profiles[profile.network] = profile.username;
-	});
 
 	var theme = fs.readFileSync(__dirname + '/resume.template', 'utf8');
 	var css = fs.readFileSync(__dirname + "/resume.css", "utf-8");

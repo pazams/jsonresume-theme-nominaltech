@@ -60,22 +60,22 @@
                   {{^url}}
                     {{username}}
                   {{/url}}
-                  </div>
-                  {{/username}}
-                  {{^username}}
-                    {{#url}}
-                    <div class="url">
-                      <a href="{{url}}">{{url}}</a>
-                    </div>
-                    {{/url}}
-                  {{/username}}
                 </div>
-                {{/profiles}}
+                {{/username}}
+                {{^username}}
+                  {{#url}}
+                  <div class="url">
+                    <a href="{{url}}">{{url}}</a>
+                  </div>
+                  {{/url}}
+                {{/username}}
               </div>
-            </section>
+              {{/profiles}}
+            </div>
+          </section>
+          {{/profiles.length}}
         </div>
       </section>
-      {{/profiles.length}}
       {{#work.length}}
       <section class="row">
         <header class="col-md-3">

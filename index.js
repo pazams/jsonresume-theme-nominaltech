@@ -47,8 +47,10 @@ function render(resumeObject) {
 	_.each(resumeObject.basics.profiles, function(profile){
     	resumeObject.profiles[profile.network] = profile.username;
 	});
-	console.log(resumeObject.profiles);
+
 	var theme = fs.readFileSync(__dirname + '/resume.template', 'utf8');
+	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
+	resumeObject.css = css;
 	var resumeHTML = Mustache.render(theme, resumeObject);
 	
 

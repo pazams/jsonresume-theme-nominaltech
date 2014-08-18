@@ -7,21 +7,7 @@
     <title>{{basics.firstName}} {{basics.lastName}}</title>
     <link href="http://bootswatch.com/lumen/bootstrap.min.css" rel="stylesheet" />
    <style>
-      .skills ul {
-        margin: 0;
-        padding: 0;
-      }
-      .skills ul li {
-        list-style: none;
-        margin: 0;
-      }
-      .date {
-        font-size: 15px;
-        line-height: 24px;
-      }
-      .website {
-        line-height: 18px;
-      }
+      {{{css}}}
     </style>
 
   

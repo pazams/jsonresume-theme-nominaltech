@@ -101,7 +101,30 @@
           </div>
         </div>
       </section>
-      {{/education.length}} 
+      {{/education.length}}
+      {{#volunteer.length}}
+      <section class="row">
+        <header class="col-md-3">
+          <h3>Volunteer</h3>
+        </header>
+        <div class="col-md-9">
+          <div class="skills">
+            {{#volunteer}}
+            <h3>{{organization}}</h3>
+            <h4>{{position}}</h4>
+            <p>{{startDateYear}} - {{endDateYear}}</p>
+            <p>{{summary}}</p>
+            <ul>
+              {{#highlights}}
+              <li>{{.}}</li>
+              {{/highlights}}
+            </ul>
+            <hr />
+            {{/volunteer}}
+          </div>
+        </div>
+      </section>
+      {{/volunteer.length}}
       {{#skills.length}}
       <section class="row">
         <header class="col-md-3">

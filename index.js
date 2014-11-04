@@ -51,6 +51,7 @@ function render(resumeObject) {
 
 	return resumeHTML;
 };
+
 module.exports = {
 	render: render
 }

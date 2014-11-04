@@ -1,10 +1,5 @@
-jsonresume-theme-modern-extended
+jsonresume-theme-nominaltech
 ================================
-This is a resume template for jsonresume.org
+Resume template for jsonresume.org
 
-Based on the modern template by jsonresume: https://github.com/jsonresume/jsonresume-theme-modern
-
-Extends the modern theme by showing profiles, skill levels, volunteer, languages, courses, etc.
-
-See example: http://registry.jsonresume.org/Zeikko?theme=modern-extended
-
+Based on the [modern-extended](https://github.com/Zeikko/jsonresume-theme-modern-extended) template.

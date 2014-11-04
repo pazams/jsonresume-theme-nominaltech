@@ -1,21 +1,21 @@
 {
-  "name": "jsonresume-theme-modern-extended",
-  "version": "0.1.1",
-  "description": "jsonresume-theme-modern-extended =======================",
+  "name": "jsonresume-theme-nominaltech",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "Nominaltech JSON Resume theme.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Zeikko/jsonresume-theme-modern-extended"
+    "url": "https://github.com/joshglendenning/jsonresume-theme-nominaltech"
   },
-  "author": "",
+  "author": "Josh Glendenning",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Zeikko/jsonresume-theme-modern-extended/issues"
+    "url": "https://github.com/joshglendenning/jsonresume-theme-nominaltech/issues"
   },
-  "homepage": "https://github.com/Zeikko/jsonresume-theme-modern-extended",
+  "homepage": "https://github.com/joshglendenning/jsonresume-theme-nominaltech",
   "dependencies": {
     "gravatar": "^1.0.6",
     "lodash": "^2.4.1",

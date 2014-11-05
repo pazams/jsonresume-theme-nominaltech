@@ -13,24 +13,45 @@
 
 	</head>
 	<body>
-		<div class="container">
+		<div class='container-fluid'>
 			<main class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<section id='header' class="row">
-						<div class="col-md-9 title">
-							<h1>{{basics.name}}</h1><h2 class='vr'></h2><h2>{{basics.label}}</h2>
-							<!--<h2>{{basics.location.city}}</h2>-->
+				<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+					<section id='header-sm' class="hidden-xs row">
+						<div class="col-sm-9 title">
+							<h1>{{basics.name}}</h1>
+							<h2 class='vr hidden-xs'></h2>
+							<h2>{{basics.label}}</h2>
 						</div>
-						<div class="col-md-3 photo">
+						<div class="col-sm-3 photo">
+							{{#basics.gravatar}}
 							<img class="media-object img-circle pull-right" data-src="holder.js/64x64" alt="64x64" src="{{basics.gravatar}}">
+							{{/basics.gravatar}}
+							{{#basics.photo}}
+							<img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" src="{{basics.photo}}">
+							{{/basics.photo}}
+						</div>
+					</section>
+					<section id='header-xs' class="hidden-sm hidden-md hidden-lg row">
+						<div class="col-xs-12 title">
+							<h1>{{basics.name}}</h1>
+							<h2 class='vr hidden-xs'></h2>
+							<h2>{{basics.label}}</h2>
+						</div>
+						<div class="col-xs-12 text-center photo">
+							{{#basics.gravatar}}
+							<img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" src="{{basics.gravatar}}">
+							{{/basics.gravatar}}
+							{{#basics.photo}}
+							<img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" src="{{basics.photo}}">
+							{{/basics.photo}}
 						</div>
 					</section>
 					<hr style="color: #ccc; height: 4px;" />
 					<section id='about' class="row">
-						<header class="col-md-3">
+						<header class="col-sm-3">
 							<h3>About</h3>
 						</header>
-						<div class="col-md-9">
+						<div class="col-sm-9">
 							<p>{{basics.summary}}</p>
 							{{#basics.phone}}
 							<strong>Phone:</strong> {{basics.phone}} <br />
@@ -77,10 +98,10 @@
 					<hr />
 					{{#work.length}}
 					<section id='work' class="row">
-						<header class="col-md-3">
+						<header class="col-sm-3">
 							<h3>Work Experience</h3>
 						</header>
-						<div class="col-md-9">
+						<div class="col-sm-9">
 							<div class="details">
 								{{#work}}
 								<h3>{{company}}<span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
@@ -105,10 +126,10 @@
 
 					{{#education.length}}
 					<section id='education' class="row">
-						<header class="col-md-3">
+						<header class="col-sm-3">
 							<h3>Education</h3>
 						</header>
-						<div class="col-md-9">
+						<div class="col-sm-9">
 							<div class="details">
 								{{#education}}
 								<h3>{{institution}}<span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
@@ -129,10 +150,10 @@
 					{{/education.length}}
 					{{#volunteer.length}}
 					<section id='volunteer' class="row">
-						<header class="col-md-3">
+						<header class="col-sm-3">
 							<h3>Volunteer</h3>
 						</header>
-						<div class="col-md-9">
+						<div class="col-sm-9">
 							<div class="details">
 								{{#volunteer}}
 								<h3>{{organization}}<span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
@@ -156,10 +177,10 @@
 					{{/volunteer.length}}
 					{{#skills.length}}
 					<section id='skills' class="row">
-						<header class="col-md-3">
+						<header class="col-sm-3">
 							<h3>Skills</h3>
 						</header>
-						<div class="col-md-9">
+						<div class="col-sm-9">
 							<div class="details row">
 								{{#skills}}
 								<!--<div class='col-md-6 col-sm-12'>-->
@@ -183,10 +204,10 @@
 					{{/skills.length}}
 					{{#languages.length}}
 					<section id='languages' class="row">
-						<header class="col-md-3">
+						<header class="col-sm-3">
 							<h3>Languages</h3>
 						</header>
-						<div class="col-md-9">
+						<div class="col-sm-9">
 							<div class="details">
 								{{#languages}}
 								<ul>
@@ -202,10 +223,10 @@
 					{{/languages.length}}
 					{{#references.length}}
 					<section id='references' class="row">
-						<header class="col-md-3">
+						<header class="col-sm-3">
 							<h3>References</h3>
 						</header>
-						<div class="col-md-9">
+						<div class="col-sm-9">
 							<div class="details row">
 								{{#references}}
 

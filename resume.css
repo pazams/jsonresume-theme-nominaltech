@@ -29,14 +29,18 @@ main {
 	border-left: 1px solid gray;
 }
 
-section#header .title h1,h2 {
+section#header-sm .title h1,h2 {
 	display: inline;
 	padding-right: 20px;
 }
 
-section#header img {
-	width: 50px;
-	height: 50px;
+section#header-sm img {
+	width: 4em;
+	height: 4em;
+}
+
+section#header-xs img {
+	padding: 20px;
 }
 
 section#skills .details {

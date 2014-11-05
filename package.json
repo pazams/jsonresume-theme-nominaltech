@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-nominaltech",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Nominaltech JSON Resume theme.",
   "main": "index.js",
   "scripts": {

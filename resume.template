@@ -110,7 +110,7 @@
 				<div class="col-sm-9">
 					<div class="details">
 						{{#education}}
-						<h3>{{institution}}<span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
+						<h3>{{institution}}<span class="date pull-right">{{startDateYear}}{{endDateYear}}</span></h3>
 						<strong>{{educationDetail}}</strong>
 						<p>{{summary}}</p>
 						{{#courses.length}}

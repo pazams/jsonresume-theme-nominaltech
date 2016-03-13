@@ -28,7 +28,11 @@ function render(resumeObject) {
 		}  else {
 			e.educationDetail = e.area + ", "+ e.studyType;
 		}
-		e.startDateYear = e.startDate.substr(0,4);
+		if(e.startDate) {
+			e.startDateYear = e.startDate.substr(0, 4) + ' - ';
+		}  else {
+			e.startDateYear = undefined;
+		}
 		if(e.endDate) {
 			e.endDateYear = e.endDate.substr(0,4);
 		}  else { 

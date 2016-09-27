@@ -67,7 +67,7 @@ section#skills .details {
 	margin-top: 20px;
 	margin-bottom: 5px;
 }
-.date {
+.date, .heading-right {
 	font-size: 15px;
 	line-height: 24px;
 }

@@ -179,6 +179,29 @@
 				</section>
 				<hr />
 				{{/volunteer.length}}
+                                {{#publications.length}}
+                                <section id='publications' class="row">
+                                  <header class="col-sm-3 text-center">
+                                    <h3>Open Source Projects</h3>
+                                  </header>
+                                  <div class="col-sm-9">
+                                    <div class="details">
+                                      {{#publications}}
+                                      <h3>
+                                        {{name}}
+                                      </h3>
+                                      {{#website}}
+                                      <div class="website">
+                                        <a target="_blank" href="{{.}}">{{.}}</a>
+                                      </div>
+                                      {{/website}}
+                                      <p>{{summary}}</p>
+                                      {{/publications}}
+                                    </div>
+                                  </div>
+                                </section>
+                                <hr />
+                                {{/publications.length}}
 				{{#languages.length}}
 				<section id='languages' class="row">
 				<header class="col-sm-3 text-center">

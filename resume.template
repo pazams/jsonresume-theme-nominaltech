@@ -30,7 +30,7 @@
 				</section>
 				<hr style="color: #ccc; height: 4px;" />
 				<section id='about' class="row">
-				<header class="col-sm-3">
+				<header class="col-sm-3 text-center">
 				<h3>About</h3>
 				</header>
 				<div class="col-sm-9">
@@ -76,7 +76,7 @@
 				<hr />
 				{{#work.length}}
 				<section id='work' class="row">
-				<header class="col-sm-3">
+				<header class="col-sm-3 text-center">
 				<h3>Work Experience</h3>
 				</header>
 				<div class="col-sm-9">
@@ -104,7 +104,7 @@
 
 				{{#education.length}}
 				<section id='education' class="row">
-				<header class="col-sm-3">
+				<header class="col-sm-3 text-center">
 				<h3>Education</h3>
 				</header>
 				<div class="col-sm-9">
@@ -128,7 +128,7 @@
 				{{/education.length}}
 				{{#skills.length}}
 				<section id='skills' class="row">
-				<header class="col-sm-3">
+				<header class="col-sm-3 text-center">
 				<h3>Skills</h3>
 				</header>
 				<div class="col-sm-9">
@@ -154,7 +154,7 @@
 				{{/skills.length}}
 				{{#volunteer.length}}
 				<section id='volunteer' class="row">
-				<header class="col-sm-3">
+				<header class="col-sm-3 text-center">
 				<h3>Volunteer</h3>
 				</header>
 				<div class="col-sm-9">
@@ -181,7 +181,7 @@
 				{{/volunteer.length}}
 				{{#languages.length}}
 				<section id='languages' class="row">
-				<header class="col-sm-3">
+				<header class="col-sm-3 text-center">
 				<h3>Languages</h3>
 				</header>
 				<div class="col-sm-9">
@@ -200,7 +200,7 @@
 				{{/languages.length}}
 				{{#references.length}}
 				<section id='references' class="row">
-				<header class="col-sm-3">
+				<header class="col-sm-3 text-center">
 				<h3>References</h3>
 				</header>
 				<div class="col-sm-9">

@@ -181,24 +181,22 @@
 				<header class="col-sm-3 text-center">
 				<h3>Skills</h3>
 				</header>
-				<div class="col-sm-9">
-					<div class="details row">
-						{{#skills}}
-						<div class='col-sm-12'>
-							<ul>
-								<li>
-								<h4>{{name}} <span class="pull-right">{{level}}</span></h4>
-								<ul>
-									{{#keywords}}
-									<li>{{.}}</li>
-									{{/keywords}}
-								</ul>
-								</li>
-							</ul>
-						</div>
-						{{/skills}}
-					</div>
-				</div>
+                                <div class="col-sm-9">
+                                  <div class="row">
+
+                                    {{#skills}}
+
+                                  <div class="col-sm-12">
+                                    <div> <h4> {{name}} </h4> </div>
+                                    {{#keywords}}
+                                    <span style="white-space: pre-wrap;">{{.}}</span> 
+
+                                    {{/keywords}}
+                                  </div>
+                                    {{/skills}}
+
+                                  </div>
+                                </div>
 				</section>
 				<hr />
 				{{/skills.length}}

@@ -82,8 +82,8 @@
 				<div class="col-sm-9">
 					<div class="details">
 						{{#work}}
-						<h3>{{company}}<span class="date pull-right">{{startDateYear}} - {{endDateYear}}</span></h3>
-						<strong>{{position}}</strong>
+                                                <h3>{{company}}<span class="date pull-right">{{startDateFmt}} - {{endDateFmt }}</span></h3>
+                                                <strong>{{position}}</strong>
 						{{#website}}
 						<div class="website pull-right">
 							<a target="_blank" href="{{.}}">{{.}}</a>

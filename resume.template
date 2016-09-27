@@ -201,7 +201,7 @@
                                     {{#skills}}
 
                                   <div class="col-sm-12">
-                                    <div> <h4> {{name}} </h4> </div>
+                                    <div> <h4> <strong>{{name}}</strong> </h4> </div>
                                     {{#keywords}}
                                     <span style="white-space: pre-wrap;">{{.}}</span> 
 

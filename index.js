@@ -7,11 +7,12 @@ function render(resumeObject) {
 
 
 	_.each(resumeObject.work, function(w){
-		w.startDateYear = w.startDate.substr(0,4);
+		w.startDateFmt = w.startDate.substr(5,2) +"/" + w.startDate.substr(0,4);
+
 		if(w.endDate) {
-			w.endDateYear = w.endDate.substr(0,4);
-		} else { 
-			w.endDateYear = 'Present'
+                        w.endDateFmt = w.endDate.substr(5,2) +"/" + w.endDate.substr(0,4);
+                } else { 
+			w.endDateFmt = 'Present';
 		}
 	});
 	_.each(resumeObject.volunteer, function(v){

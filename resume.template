@@ -22,11 +22,11 @@
 					<h2 class='vr'></h2>
 					<h2>{{basics.label}}</h2>
 				</div>
+					{{#basics.picture}}
 				<div class="col-sm-3 col-xs-12 text-center photo">
-					{{#basics.gravatar}}
-					<img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" src="{{basics.gravatar}}">
-					{{/basics.gravatar}}
+					<img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" src="{{basics.picture}}">
 				</div>
+					{{/basics.picture}}
 				</section>
 				<hr style="color: #ccc; height: 4px;" />
 				<section id='about' class="row">

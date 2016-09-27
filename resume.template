@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{{basics.firstName}} {{basics.lastName}}</title>
-		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+                <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
 		<style>
 			{{{css}}}
 		</style>
@@ -28,7 +28,7 @@
 				</div>
 					{{/basics.picture}}
 				</section>
-				<hr style="color: #ccc; height: 4px;" />
+				<hr style="color: #ccc;" />
 				<section id='about' class="row">
 				<header class="col-sm-3 text-center">
 				<h3>About</h3>
@@ -126,32 +126,29 @@
 				</section>
 				<hr />
 				{{/education.length}}
-				{{#skills.length}}
-				<section id='skills' class="row">
-				<header class="col-sm-3 text-center">
-				<h3>Skills</h3>
-				</header>
-				<div class="col-sm-9">
-					<div class="details row">
-						{{#skills}}
-						<div class='col-sm-12'>
-							<ul>
-								<li>
-								<h4>{{name}} <span class="pull-right">{{level}}</span></h4>
-								<ul>
-									{{#keywords}}
-									<li>{{.}}</li>
-									{{/keywords}}
-								</ul>
-								</li>
-							</ul>
-						</div>
-						{{/skills}}
-					</div>
-				</div>
-				</section>
-				<hr />
-				{{/skills.length}}
+                                {{#publications.length}}
+                                <section id='publications' class="row">
+                                  <header class="col-sm-3 text-center">
+                                    <h3>Open Source Projects</h3>
+                                  </header>
+                                  <div class="col-sm-9">
+                                    <div class="details">
+                                      {{#publications}}
+                                      <h3>
+                                        {{name}}
+                                      </h3>
+                                      {{#website}}
+                                      <div class="website">
+                                        <a target="_blank" href="{{.}}">{{.}}</a>
+                                      </div>
+                                      {{/website}}
+                                      <p>{{summary}}</p>
+                                      {{/publications}}
+                                    </div>
+                                  </div>
+                                </section>
+                                <hr />
+                                {{/publications.length}}
 				{{#volunteer.length}}
 				<section id='volunteer' class="row">
 				<header class="col-sm-3 text-center">
@@ -179,29 +176,32 @@
 				</section>
 				<hr />
 				{{/volunteer.length}}
-                                {{#publications.length}}
-                                <section id='publications' class="row">
-                                  <header class="col-sm-3 text-center">
-                                    <h3>Open Source Projects</h3>
-                                  </header>
-                                  <div class="col-sm-9">
-                                    <div class="details">
-                                      {{#publications}}
-                                      <h3>
-                                        {{name}}
-                                      </h3>
-                                      {{#website}}
-                                      <div class="website">
-                                        <a target="_blank" href="{{.}}">{{.}}</a>
-                                      </div>
-                                      {{/website}}
-                                      <p>{{summary}}</p>
-                                      {{/publications}}
-                                    </div>
-                                  </div>
-                                </section>
-                                <hr />
-                                {{/publications.length}}
+				{{#skills.length}}
+				<section id='skills' class="row">
+				<header class="col-sm-3 text-center">
+				<h3>Skills</h3>
+				</header>
+				<div class="col-sm-9">
+					<div class="details row">
+						{{#skills}}
+						<div class='col-sm-12'>
+							<ul>
+								<li>
+								<h4>{{name}} <span class="pull-right">{{level}}</span></h4>
+								<ul>
+									{{#keywords}}
+									<li>{{.}}</li>
+									{{/keywords}}
+								</ul>
+								</li>
+							</ul>
+						</div>
+						{{/skills}}
+					</div>
+				</div>
+				</section>
+				<hr />
+				{{/skills.length}}
 				{{#languages.length}}
 				<section id='languages' class="row">
 				<header class="col-sm-3 text-center">
